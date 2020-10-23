@@ -15,6 +15,12 @@
 		ECF770992542F841000C96DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF770972542F841000C96DD /* LaunchScreen.storyboard */; };
 		ECF770A42542F842000C96DD /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF770A32542F842000C96DD /* ExampleTests.swift */; };
 		ECF770AF2542F842000C96DD /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF770AE2542F842000C96DD /* ExampleUITests.swift */; };
+		ECF770D02543050E000C96DD /* Web.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF770C72543050E000C96DD /* Web.framework */; };
+		ECF770D72543050E000C96DD /* WebTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF770D62543050E000C96DD /* WebTests.swift */; };
+		ECF770D92543050E000C96DD /* Web.h in Headers */ = {isa = PBXBuildFile; fileRef = ECF770C92543050E000C96DD /* Web.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECF770DC2543050E000C96DD /* Web.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF770C72543050E000C96DD /* Web.framework */; };
+		ECF770DD2543050E000C96DD /* Web.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECF770C72543050E000C96DD /* Web.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECF770EA25430581000C96DD /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF770E925430581000C96DD /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +38,42 @@
 			remoteGlobalIDString = ECF770882542F840000C96DD;
 			remoteInfo = Example;
 		};
+		ECF770D12543050E000C96DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF770812542F840000C96DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF770C62543050E000C96DD;
+			remoteInfo = Web;
+		};
+		ECF770D32543050E000C96DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF770812542F840000C96DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF770882542F840000C96DD;
+			remoteInfo = Example;
+		};
+		ECF770DA2543050E000C96DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF770812542F840000C96DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF770C62543050E000C96DD;
+			remoteInfo = Web;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ECF770DE2543050E000C96DD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ECF770DD2543050E000C96DD /* Web.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		ECF770892542F840000C96DD /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +90,13 @@
 		ECF770AA2542F842000C96DD /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF770AE2542F842000C96DD /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		ECF770B02542F842000C96DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF770C72543050E000C96DD /* Web.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Web.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF770C92543050E000C96DD /* Web.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Web.h; sourceTree = "<group>"; };
+		ECF770CA2543050E000C96DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF770CF2543050E000C96DD /* WebTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF770D62543050E000C96DD /* WebTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebTests.swift; sourceTree = "<group>"; };
+		ECF770D82543050E000C96DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF770E925430581000C96DD /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECF770DC2543050E000C96DD /* Web.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +122,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ECF770C42543050E000C96DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF770CC2543050E000C96DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF770D02543050E000C96DD /* Web.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +146,8 @@
 				ECF7708B2542F840000C96DD /* Example */,
 				ECF770A22542F842000C96DD /* ExampleTests */,
 				ECF770AD2542F842000C96DD /* ExampleUITests */,
+				ECF770C82543050E000C96DD /* Web */,
+				ECF770D52543050E000C96DD /* WebTests */,
 				ECF7708A2542F840000C96DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +158,8 @@
 				ECF770892542F840000C96DD /* Example.app */,
 				ECF7709F2542F842000C96DD /* ExampleTests.xctest */,
 				ECF770AA2542F842000C96DD /* ExampleUITests.xctest */,
+				ECF770C72543050E000C96DD /* Web.framework */,
+				ECF770CF2543050E000C96DD /* WebTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,7 +204,37 @@
 			path = ExampleUITests;
 			sourceTree = "<group>";
 		};
+		ECF770C82543050E000C96DD /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				ECF770C92543050E000C96DD /* Web.h */,
+				ECF770CA2543050E000C96DD /* Info.plist */,
+				ECF770E925430581000C96DD /* WebView.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		ECF770D52543050E000C96DD /* WebTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECF770D62543050E000C96DD /* WebTests.swift */,
+				ECF770D82543050E000C96DD /* Info.plist */,
+			);
+			path = WebTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ECF770C22543050E000C96DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF770D92543050E000C96DD /* Web.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		ECF770882542F840000C96DD /* Example */ = {
@@ -146,10 +244,12 @@
 				ECF770852542F840000C96DD /* Sources */,
 				ECF770862542F840000C96DD /* Frameworks */,
 				ECF770872542F840000C96DD /* Resources */,
+				ECF770DE2543050E000C96DD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ECF770DB2543050E000C96DD /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -192,6 +292,43 @@
 			productReference = ECF770AA2542F842000C96DD /* ExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		ECF770C62543050E000C96DD /* Web */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF770E32543050E000C96DD /* Build configuration list for PBXNativeTarget "Web" */;
+			buildPhases = (
+				ECF770C22543050E000C96DD /* Headers */,
+				ECF770C32543050E000C96DD /* Sources */,
+				ECF770C42543050E000C96DD /* Frameworks */,
+				ECF770C52543050E000C96DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Web;
+			productName = Web;
+			productReference = ECF770C72543050E000C96DD /* Web.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ECF770CE2543050E000C96DD /* WebTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF770E42543050E000C96DD /* Build configuration list for PBXNativeTarget "WebTests" */;
+			buildPhases = (
+				ECF770CB2543050E000C96DD /* Sources */,
+				ECF770CC2543050E000C96DD /* Frameworks */,
+				ECF770CD2543050E000C96DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECF770D22543050E000C96DD /* PBXTargetDependency */,
+				ECF770D42543050E000C96DD /* PBXTargetDependency */,
+			);
+			name = WebTests;
+			productName = WebTests;
+			productReference = ECF770CF2543050E000C96DD /* WebTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,6 +346,14 @@
 						TestTargetID = ECF770882542F840000C96DD;
 					};
 					ECF770A92542F842000C96DD = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = ECF770882542F840000C96DD;
+					};
+					ECF770C62543050E000C96DD = {
+						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
+					};
+					ECF770CE2543050E000C96DD = {
 						CreatedOnToolsVersion = 12.0.1;
 						TestTargetID = ECF770882542F840000C96DD;
 					};
@@ -230,6 +375,8 @@
 				ECF770882542F840000C96DD /* Example */,
 				ECF7709E2542F842000C96DD /* ExampleTests */,
 				ECF770A92542F842000C96DD /* ExampleUITests */,
+				ECF770C62543050E000C96DD /* Web */,
+				ECF770CE2543050E000C96DD /* WebTests */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +400,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		ECF770A82542F842000C96DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF770C52543050E000C96DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF770CD2543050E000C96DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -288,6 +449,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ECF770C32543050E000C96DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF770EA25430581000C96DD /* WebView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF770CB2543050E000C96DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF770D72543050E000C96DD /* WebTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -300,6 +477,21 @@
 			isa = PBXTargetDependency;
 			target = ECF770882542F840000C96DD /* Example */;
 			targetProxy = ECF770AB2542F842000C96DD /* PBXContainerItemProxy */;
+		};
+		ECF770D22543050E000C96DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECF770C62543050E000C96DD /* Web */;
+			targetProxy = ECF770D12543050E000C96DD /* PBXContainerItemProxy */;
+		};
+		ECF770D42543050E000C96DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECF770882542F840000C96DD /* Example */;
+			targetProxy = ECF770D32543050E000C96DD /* PBXContainerItemProxy */;
+		};
+		ECF770DB2543050E000C96DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECF770C62543050E000C96DD /* Web */;
+			targetProxy = ECF770DA2543050E000C96DD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -434,6 +626,7 @@
 		ECF770B42542F842000C96DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -455,6 +648,7 @@
 		ECF770B52542F842000C96DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -557,6 +751,103 @@
 			};
 			name = Release;
 		};
+		ECF770DF2543050E000C96DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 69X695F46U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Web/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stnamco.playground.Web;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ECF770E02543050E000C96DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 69X695F46U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Web/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stnamco.playground.Web;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ECF770E12543050E000C96DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69X695F46U;
+				INFOPLIST_FILE = WebTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stnamco.playground.WebTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+			};
+			name = Debug;
+		};
+		ECF770E22543050E000C96DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69X695F46U;
+				INFOPLIST_FILE = WebTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stnamco.playground.WebTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -592,6 +883,24 @@
 			buildConfigurations = (
 				ECF770BA2542F842000C96DD /* Debug */,
 				ECF770BB2542F842000C96DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF770E32543050E000C96DD /* Build configuration list for PBXNativeTarget "Web" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF770DF2543050E000C96DD /* Debug */,
+				ECF770E02543050E000C96DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF770E42543050E000C96DD /* Build configuration list for PBXNativeTarget "WebTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF770E12543050E000C96DD /* Debug */,
+				ECF770E22543050E000C96DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
