@@ -8,6 +8,9 @@
 import SwiftUI
 
 public struct WebView: View {
+    
+    @EnvironmentObject var viewModel: WebViewModel
+    
     public var body: some View {
         Text("Hello, WebView!")
     }

@@ -21,6 +21,7 @@
 		ECF770DC2543050E000C96DD /* Web.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF770C72543050E000C96DD /* Web.framework */; };
 		ECF770DD2543050E000C96DD /* Web.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECF770C72543050E000C96DD /* Web.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ECF770EA25430581000C96DD /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF770E925430581000C96DD /* WebView.swift */; };
+		ECF770F025430A7A000C96DD /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF770EF25430A7A000C96DD /* WebViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		ECF770D62543050E000C96DD /* WebTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebTests.swift; sourceTree = "<group>"; };
 		ECF770D82543050E000C96DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECF770E925430581000C96DD /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		ECF770EF25430A7A000C96DD /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 				ECF770C92543050E000C96DD /* Web.h */,
 				ECF770CA2543050E000C96DD /* Info.plist */,
 				ECF770E925430581000C96DD /* WebView.swift */,
+				ECF770EF25430A7A000C96DD /* WebViewModel.swift */,
 			);
 			path = Web;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECF770EA25430581000C96DD /* WebView.swift in Sources */,
+				ECF770F025430A7A000C96DD /* WebViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
