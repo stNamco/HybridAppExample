@@ -22,6 +22,11 @@
 		ECF770DD2543050E000C96DD /* Web.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECF770C72543050E000C96DD /* Web.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ECF770EA25430581000C96DD /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF770E925430581000C96DD /* WebView.swift */; };
 		ECF770F025430A7A000C96DD /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF770EF25430A7A000C96DD /* WebViewModel.swift */; };
+		ECF7711D2543CC50000C96DD /* Wireframe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF771142543CC50000C96DD /* Wireframe.framework */; };
+		ECF771242543CC50000C96DD /* WireframeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF771232543CC50000C96DD /* WireframeTests.swift */; };
+		ECF771262543CC50000C96DD /* Wireframe.h in Headers */ = {isa = PBXBuildFile; fileRef = ECF771162543CC50000C96DD /* Wireframe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECF771292543CC50000C96DD /* Wireframe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF771142543CC50000C96DD /* Wireframe.framework */; };
+		ECF7712A2543CC50000C96DD /* Wireframe.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECF771142543CC50000C96DD /* Wireframe.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +65,27 @@
 			remoteGlobalIDString = ECF770C62543050E000C96DD;
 			remoteInfo = Web;
 		};
+		ECF7711E2543CC50000C96DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF770812542F840000C96DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF771132543CC50000C96DD;
+			remoteInfo = Wireframe;
+		};
+		ECF771202543CC50000C96DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF770812542F840000C96DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF770882542F840000C96DD;
+			remoteInfo = Example;
+		};
+		ECF771272543CC50000C96DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF770812542F840000C96DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF771132543CC50000C96DD;
+			remoteInfo = Wireframe;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,6 +96,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				ECF770DD2543050E000C96DD /* Web.framework in Embed Frameworks */,
+				ECF7712A2543CC50000C96DD /* Wireframe.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +126,12 @@
 		ECF770D82543050E000C96DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECF770E925430581000C96DD /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		ECF770EF25430A7A000C96DD /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
+		ECF771142543CC50000C96DD /* Wireframe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Wireframe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF771162543CC50000C96DD /* Wireframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wireframe.h; sourceTree = "<group>"; };
+		ECF771172543CC50000C96DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF7711C2543CC50000C96DD /* WireframeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WireframeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF771232543CC50000C96DD /* WireframeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireframeTests.swift; sourceTree = "<group>"; };
+		ECF771252543CC50000C96DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECF770DC2543050E000C96DD /* Web.framework in Frameworks */,
+				ECF771292543CC50000C96DD /* Wireframe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +173,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ECF771112543CC50000C96DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF771192543CC50000C96DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF7711D2543CC50000C96DD /* Wireframe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -150,6 +199,8 @@
 				ECF770AD2542F842000C96DD /* ExampleUITests */,
 				ECF770C82543050E000C96DD /* Web */,
 				ECF770D52543050E000C96DD /* WebTests */,
+				ECF771152543CC50000C96DD /* Wireframe */,
+				ECF771222543CC50000C96DD /* WireframeTests */,
 				ECF7708A2542F840000C96DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -162,6 +213,8 @@
 				ECF770AA2542F842000C96DD /* ExampleUITests.xctest */,
 				ECF770C72543050E000C96DD /* Web.framework */,
 				ECF770CF2543050E000C96DD /* WebTests.xctest */,
+				ECF771142543CC50000C96DD /* Wireframe.framework */,
+				ECF7711C2543CC50000C96DD /* WireframeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,6 +279,24 @@
 			path = WebTests;
 			sourceTree = "<group>";
 		};
+		ECF771152543CC50000C96DD /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				ECF771162543CC50000C96DD /* Wireframe.h */,
+				ECF771172543CC50000C96DD /* Info.plist */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		ECF771222543CC50000C96DD /* WireframeTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECF771232543CC50000C96DD /* WireframeTests.swift */,
+				ECF771252543CC50000C96DD /* Info.plist */,
+			);
+			path = WireframeTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -234,6 +305,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECF770D92543050E000C96DD /* Web.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF7710F2543CC50000C96DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF771262543CC50000C96DD /* Wireframe.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +332,7 @@
 			);
 			dependencies = (
 				ECF770DB2543050E000C96DD /* PBXTargetDependency */,
+				ECF771282543CC50000C96DD /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -332,6 +412,43 @@
 			productReference = ECF770CF2543050E000C96DD /* WebTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		ECF771132543CC50000C96DD /* Wireframe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF7712F2543CC50000C96DD /* Build configuration list for PBXNativeTarget "Wireframe" */;
+			buildPhases = (
+				ECF7710F2543CC50000C96DD /* Headers */,
+				ECF771102543CC50000C96DD /* Sources */,
+				ECF771112543CC50000C96DD /* Frameworks */,
+				ECF771122543CC50000C96DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wireframe;
+			productName = Wireframe;
+			productReference = ECF771142543CC50000C96DD /* Wireframe.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ECF7711B2543CC50000C96DD /* WireframeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF771302543CC50000C96DD /* Build configuration list for PBXNativeTarget "WireframeTests" */;
+			buildPhases = (
+				ECF771182543CC50000C96DD /* Sources */,
+				ECF771192543CC50000C96DD /* Frameworks */,
+				ECF7711A2543CC50000C96DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECF7711F2543CC50000C96DD /* PBXTargetDependency */,
+				ECF771212543CC50000C96DD /* PBXTargetDependency */,
+			);
+			name = WireframeTests;
+			productName = WireframeTests;
+			productReference = ECF7711C2543CC50000C96DD /* WireframeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -360,6 +477,13 @@
 						CreatedOnToolsVersion = 12.0.1;
 						TestTargetID = ECF770882542F840000C96DD;
 					};
+					ECF771132543CC50000C96DD = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					ECF7711B2543CC50000C96DD = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = ECF770882542F840000C96DD;
+					};
 				};
 			};
 			buildConfigurationList = ECF770842542F840000C96DD /* Build configuration list for PBXProject "Example" */;
@@ -380,6 +504,8 @@
 				ECF770A92542F842000C96DD /* ExampleUITests */,
 				ECF770C62543050E000C96DD /* Web */,
 				ECF770CE2543050E000C96DD /* WebTests */,
+				ECF771132543CC50000C96DD /* Wireframe */,
+				ECF7711B2543CC50000C96DD /* WireframeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -417,6 +543,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		ECF770CD2543050E000C96DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF771122543CC50000C96DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF7711A2543CC50000C96DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -469,6 +609,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ECF771102543CC50000C96DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF771182543CC50000C96DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF771242543CC50000C96DD /* WireframeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -496,6 +651,21 @@
 			isa = PBXTargetDependency;
 			target = ECF770C62543050E000C96DD /* Web */;
 			targetProxy = ECF770DA2543050E000C96DD /* PBXContainerItemProxy */;
+		};
+		ECF7711F2543CC50000C96DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECF771132543CC50000C96DD /* Wireframe */;
+			targetProxy = ECF7711E2543CC50000C96DD /* PBXContainerItemProxy */;
+		};
+		ECF771212543CC50000C96DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECF770882542F840000C96DD /* Example */;
+			targetProxy = ECF771202543CC50000C96DD /* PBXContainerItemProxy */;
+		};
+		ECF771282543CC50000C96DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECF771132543CC50000C96DD /* Wireframe */;
+			targetProxy = ECF771272543CC50000C96DD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -852,6 +1022,100 @@
 			};
 			name = Release;
 		};
+		ECF7712B2543CC50000C96DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 69X695F46U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Wireframe/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stnamco.playground.Wireframe;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ECF7712C2543CC50000C96DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 69X695F46U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Wireframe/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stnamco.playground.Wireframe;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ECF7712D2543CC50000C96DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69X695F46U;
+				INFOPLIST_FILE = WireframeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stnamco.playground.WireframeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+			};
+			name = Debug;
+		};
+		ECF7712E2543CC50000C96DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69X695F46U;
+				INFOPLIST_FILE = WireframeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stnamco.playground.WireframeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -905,6 +1169,24 @@
 			buildConfigurations = (
 				ECF770E12543050E000C96DD /* Debug */,
 				ECF770E22543050E000C96DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF7712F2543CC50000C96DD /* Build configuration list for PBXNativeTarget "Wireframe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF7712B2543CC50000C96DD /* Debug */,
+				ECF7712C2543CC50000C96DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF771302543CC50000C96DD /* Build configuration list for PBXNativeTarget "WireframeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF7712D2543CC50000C96DD /* Debug */,
+				ECF7712E2543CC50000C96DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
