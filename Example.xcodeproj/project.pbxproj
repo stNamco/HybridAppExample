@@ -27,6 +27,11 @@
 		ECF771262543CC50000C96DD /* Wireframe.h in Headers */ = {isa = PBXBuildFile; fileRef = ECF771162543CC50000C96DD /* Wireframe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ECF771292543CC50000C96DD /* Wireframe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF771142543CC50000C96DD /* Wireframe.framework */; };
 		ECF7712A2543CC50000C96DD /* Wireframe.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECF771142543CC50000C96DD /* Wireframe.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECF771452543CD6C000C96DD /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF7713C2543CD6B000C96DD /* QRCodeReader.framework */; };
+		ECF7714C2543CD6C000C96DD /* QRCodeReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7714B2543CD6C000C96DD /* QRCodeReaderTests.swift */; };
+		ECF7714E2543CD6C000C96DD /* QRCodeReader.h in Headers */ = {isa = PBXBuildFile; fileRef = ECF7713E2543CD6B000C96DD /* QRCodeReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECF771512543CD6C000C96DD /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF7713C2543CD6B000C96DD /* QRCodeReader.framework */; };
+		ECF771522543CD6C000C96DD /* QRCodeReader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECF7713C2543CD6B000C96DD /* QRCodeReader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +91,27 @@
 			remoteGlobalIDString = ECF771132543CC50000C96DD;
 			remoteInfo = Wireframe;
 		};
+		ECF771462543CD6C000C96DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF770812542F840000C96DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF7713B2543CD6B000C96DD;
+			remoteInfo = QRCodeReader;
+		};
+		ECF771482543CD6C000C96DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF770812542F840000C96DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF770882542F840000C96DD;
+			remoteInfo = Example;
+		};
+		ECF7714F2543CD6C000C96DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF770812542F840000C96DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF7713B2543CD6B000C96DD;
+			remoteInfo = QRCodeReader;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -96,6 +122,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				ECF770DD2543050E000C96DD /* Web.framework in Embed Frameworks */,
+				ECF771522543CD6C000C96DD /* QRCodeReader.framework in Embed Frameworks */,
 				ECF7712A2543CC50000C96DD /* Wireframe.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -132,6 +159,12 @@
 		ECF7711C2543CC50000C96DD /* WireframeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WireframeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF771232543CC50000C96DD /* WireframeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireframeTests.swift; sourceTree = "<group>"; };
 		ECF771252543CC50000C96DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF7713C2543CD6B000C96DD /* QRCodeReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRCodeReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF7713E2543CD6B000C96DD /* QRCodeReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeReader.h; sourceTree = "<group>"; };
+		ECF7713F2543CD6B000C96DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF771442543CD6C000C96DD /* QRCodeReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF7714B2543CD6C000C96DD /* QRCodeReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderTests.swift; sourceTree = "<group>"; };
+		ECF7714D2543CD6C000C96DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECF770DC2543050E000C96DD /* Web.framework in Frameworks */,
+				ECF771512543CD6C000C96DD /* QRCodeReader.framework in Frameworks */,
 				ECF771292543CC50000C96DD /* Wireframe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +222,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ECF771392543CD6B000C96DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF771412543CD6C000C96DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF771452543CD6C000C96DD /* QRCodeReader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -201,6 +250,8 @@
 				ECF770D52543050E000C96DD /* WebTests */,
 				ECF771152543CC50000C96DD /* Wireframe */,
 				ECF771222543CC50000C96DD /* WireframeTests */,
+				ECF7713D2543CD6B000C96DD /* QRCodeReader */,
+				ECF7714A2543CD6C000C96DD /* QRCodeReaderTests */,
 				ECF7708A2542F840000C96DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -215,6 +266,8 @@
 				ECF770CF2543050E000C96DD /* WebTests.xctest */,
 				ECF771142543CC50000C96DD /* Wireframe.framework */,
 				ECF7711C2543CC50000C96DD /* WireframeTests.xctest */,
+				ECF7713C2543CD6B000C96DD /* QRCodeReader.framework */,
+				ECF771442543CD6C000C96DD /* QRCodeReaderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -297,6 +350,24 @@
 			path = WireframeTests;
 			sourceTree = "<group>";
 		};
+		ECF7713D2543CD6B000C96DD /* QRCodeReader */ = {
+			isa = PBXGroup;
+			children = (
+				ECF7713E2543CD6B000C96DD /* QRCodeReader.h */,
+				ECF7713F2543CD6B000C96DD /* Info.plist */,
+			);
+			path = QRCodeReader;
+			sourceTree = "<group>";
+		};
+		ECF7714A2543CD6C000C96DD /* QRCodeReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECF7714B2543CD6C000C96DD /* QRCodeReaderTests.swift */,
+				ECF7714D2543CD6C000C96DD /* Info.plist */,
+			);
+			path = QRCodeReaderTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -313,6 +384,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECF771262543CC50000C96DD /* Wireframe.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF771372543CD6B000C96DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF7714E2543CD6C000C96DD /* QRCodeReader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +412,7 @@
 			dependencies = (
 				ECF770DB2543050E000C96DD /* PBXTargetDependency */,
 				ECF771282543CC50000C96DD /* PBXTargetDependency */,
+				ECF771502543CD6C000C96DD /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -449,6 +529,43 @@
 			productReference = ECF7711C2543CC50000C96DD /* WireframeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		ECF7713B2543CD6B000C96DD /* QRCodeReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF771532543CD6C000C96DD /* Build configuration list for PBXNativeTarget "QRCodeReader" */;
+			buildPhases = (
+				ECF771372543CD6B000C96DD /* Headers */,
+				ECF771382543CD6B000C96DD /* Sources */,
+				ECF771392543CD6B000C96DD /* Frameworks */,
+				ECF7713A2543CD6B000C96DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QRCodeReader;
+			productName = QRCodeReader;
+			productReference = ECF7713C2543CD6B000C96DD /* QRCodeReader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ECF771432543CD6C000C96DD /* QRCodeReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF771562543CD6C000C96DD /* Build configuration list for PBXNativeTarget "QRCodeReaderTests" */;
+			buildPhases = (
+				ECF771402543CD6C000C96DD /* Sources */,
+				ECF771412543CD6C000C96DD /* Frameworks */,
+				ECF771422543CD6C000C96DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECF771472543CD6C000C96DD /* PBXTargetDependency */,
+				ECF771492543CD6C000C96DD /* PBXTargetDependency */,
+			);
+			name = QRCodeReaderTests;
+			productName = QRCodeReaderTests;
+			productReference = ECF771442543CD6C000C96DD /* QRCodeReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -484,6 +601,13 @@
 						CreatedOnToolsVersion = 12.0.1;
 						TestTargetID = ECF770882542F840000C96DD;
 					};
+					ECF7713B2543CD6B000C96DD = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					ECF771432543CD6C000C96DD = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = ECF770882542F840000C96DD;
+					};
 				};
 			};
 			buildConfigurationList = ECF770842542F840000C96DD /* Build configuration list for PBXProject "Example" */;
@@ -506,6 +630,8 @@
 				ECF770CE2543050E000C96DD /* WebTests */,
 				ECF771132543CC50000C96DD /* Wireframe */,
 				ECF7711B2543CC50000C96DD /* WireframeTests */,
+				ECF7713B2543CD6B000C96DD /* QRCodeReader */,
+				ECF771432543CD6C000C96DD /* QRCodeReaderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -557,6 +683,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		ECF7711A2543CC50000C96DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF7713A2543CD6B000C96DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF771422543CD6C000C96DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -624,6 +764,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ECF771382543CD6B000C96DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF771402543CD6C000C96DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF7714C2543CD6C000C96DD /* QRCodeReaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -666,6 +821,21 @@
 			isa = PBXTargetDependency;
 			target = ECF771132543CC50000C96DD /* Wireframe */;
 			targetProxy = ECF771272543CC50000C96DD /* PBXContainerItemProxy */;
+		};
+		ECF771472543CD6C000C96DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECF7713B2543CD6B000C96DD /* QRCodeReader */;
+			targetProxy = ECF771462543CD6C000C96DD /* PBXContainerItemProxy */;
+		};
+		ECF771492543CD6C000C96DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECF770882542F840000C96DD /* Example */;
+			targetProxy = ECF771482543CD6C000C96DD /* PBXContainerItemProxy */;
+		};
+		ECF771502543CD6C000C96DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECF7713B2543CD6B000C96DD /* QRCodeReader */;
+			targetProxy = ECF7714F2543CD6C000C96DD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1116,6 +1286,100 @@
 			};
 			name = Release;
 		};
+		ECF771542543CD6C000C96DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 69X695F46U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = QRCodeReader/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stnamco.playground.QRCodeReader;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ECF771552543CD6C000C96DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 69X695F46U;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = QRCodeReader/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stnamco.playground.QRCodeReader;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ECF771572543CD6C000C96DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69X695F46U;
+				INFOPLIST_FILE = QRCodeReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stnamco.playground.QRCodeReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+			};
+			name = Debug;
+		};
+		ECF771582543CD6C000C96DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69X695F46U;
+				INFOPLIST_FILE = QRCodeReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stnamco.playground.QRCodeReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1187,6 +1451,24 @@
 			buildConfigurations = (
 				ECF7712D2543CC50000C96DD /* Debug */,
 				ECF7712E2543CC50000C96DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF771532543CD6C000C96DD /* Build configuration list for PBXNativeTarget "QRCodeReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF771542543CD6C000C96DD /* Debug */,
+				ECF771552543CD6C000C96DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF771562543CD6C000C96DD /* Build configuration list for PBXNativeTarget "QRCodeReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF771572543CD6C000C96DD /* Debug */,
+				ECF771582543CD6C000C96DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
