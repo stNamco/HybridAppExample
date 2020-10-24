@@ -7,16 +7,12 @@
 
 import SwiftUI
 
-public struct QRCodeReaderView: View {
+struct QRCodeReaderView: View {
     
-    public let data: String
+    let data: String
     
-    public var body: some View {
+    var body: some View {
         Text("Hello, QRCodeReader!: \(data)")
-    }
-    
-    public init(data: String) {
-        self.data = data
     }
 }
 
