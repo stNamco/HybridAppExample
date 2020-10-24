@@ -26,7 +26,7 @@ public class GlobalSceneRouter {
 
     public func qrView(data: String) -> some View
     {
-        return qrWireframe.generateView(data: data)
+        return qrWireframe.generateView(data: data).addEnvironment(globalSceneRouter: self)
     }
 
     public func replaceWebView() {
@@ -44,8 +44,6 @@ extension View {
         self.environment(\.globalSceneRouter, globalSceneRouter)
     }
 }
-
-
 
 public struct SceneRouterKey: EnvironmentKey {
     public static var defaultValue: GlobalSceneRouter? {

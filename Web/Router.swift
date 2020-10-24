@@ -14,9 +14,7 @@ public struct Router: WebWireframe {
 
     public func generateView() -> AnyView {
         AnyView(
-            WebView(
-                urlString: "https://www.apple.com"
-            )
+            ContentView()
         )
     }
 }
