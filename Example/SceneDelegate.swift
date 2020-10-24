@@ -8,6 +8,7 @@
 import UIKit
 import SwiftUI
 import Web
+import QRCodeReader
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -21,7 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
 //        let contentView = ContentView()
-        let contentView = WebView(urlString: "https://www.apple.com")
+//        let contentView = WebView(urlString: "https://www.apple.com")
+        let contentView = QRCodeReader()
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
