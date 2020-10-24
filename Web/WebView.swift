@@ -12,7 +12,7 @@ struct WebView: UIViewRepresentable {
     
     typealias UIViewType = WKWebView
     
-    let urlString: String
+    var urlString: String?
     
     @EnvironmentObject var viewModel: WebViewModel
     
@@ -52,7 +52,9 @@ struct WebView: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: WKWebView, context: Context) {
-        uiView.load(URLRequest(url: URL(string: urlString)!))
+        if let v = urlString {
+            uiView.load(URLRequest(url: URL(string: v)!))
+        }
     }
 }
 

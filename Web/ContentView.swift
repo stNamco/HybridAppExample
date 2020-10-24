@@ -10,12 +10,13 @@ import SwiftUI
 struct ContentView: View {
     
     @Environment(\.globalSceneRouter) var globalSceneRouter
+    @Environment(\.mainURLString) var mainURLString
     @State var isQRPresented: Bool = false
     
     var body: some View {
         VStack{
             WebView(
-                urlString: "https://www.apple.com"
+                urlString: mainURLString
             )
             Button(action: {
                 print("Button Tapped")
