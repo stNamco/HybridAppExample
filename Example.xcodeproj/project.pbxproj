@@ -32,7 +32,12 @@
 		ECF7714E2543CD6C000C96DD /* QRCodeReader.h in Headers */ = {isa = PBXBuildFile; fileRef = ECF7713E2543CD6B000C96DD /* QRCodeReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ECF771512543CD6C000C96DD /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF7713C2543CD6B000C96DD /* QRCodeReader.framework */; };
 		ECF771522543CD6C000C96DD /* QRCodeReader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECF7713C2543CD6B000C96DD /* QRCodeReader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		ECF771622543CDC6000C96DD /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF771612543CDC6000C96DD /* QRCodeReader.swift */; };
+		ECF771622543CDC6000C96DD /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF771612543CDC6000C96DD /* QRCodeReaderView.swift */; };
+		ECF7716C2543CEE6000C96DD /* GlobalSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7716B2543CEE6000C96DD /* GlobalSceneRouter.swift */; };
+		ECF771762543CF44000C96DD /* WebWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF771752543CF44000C96DD /* WebWireframe.swift */; };
+		ECF771802543CF51000C96DD /* QRCodeReaderWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF7717F2543CF51000C96DD /* QRCodeReaderWireframe.swift */; };
+		ECF7718A2543D1AE000C96DD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF771892543D1AE000C96DD /* Router.swift */; };
+		ECF771942543D3E3000C96DD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF771932543D3E3000C96DD /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,7 +171,12 @@
 		ECF771442543CD6C000C96DD /* QRCodeReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF7714B2543CD6C000C96DD /* QRCodeReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderTests.swift; sourceTree = "<group>"; };
 		ECF7714D2543CD6C000C96DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECF771612543CDC6000C96DD /* QRCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
+		ECF771612543CDC6000C96DD /* QRCodeReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderView.swift; sourceTree = "<group>"; };
+		ECF7716B2543CEE6000C96DD /* GlobalSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSceneRouter.swift; sourceTree = "<group>"; };
+		ECF771752543CF44000C96DD /* WebWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebWireframe.swift; sourceTree = "<group>"; };
+		ECF7717F2543CF51000C96DD /* QRCodeReaderWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderWireframe.swift; sourceTree = "<group>"; };
+		ECF771892543D1AE000C96DD /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		ECF771932543D3E3000C96DD /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +331,7 @@
 				ECF770CA2543050E000C96DD /* Info.plist */,
 				ECF770E925430581000C96DD /* WebView.swift */,
 				ECF770EF25430A7A000C96DD /* WebViewModel.swift */,
+				ECF771892543D1AE000C96DD /* Router.swift */,
 			);
 			path = Web;
 			sourceTree = "<group>";
@@ -338,6 +349,9 @@
 			isa = PBXGroup;
 			children = (
 				ECF771162543CC50000C96DD /* Wireframe.h */,
+				ECF7716B2543CEE6000C96DD /* GlobalSceneRouter.swift */,
+				ECF771752543CF44000C96DD /* WebWireframe.swift */,
+				ECF7717F2543CF51000C96DD /* QRCodeReaderWireframe.swift */,
 				ECF771172543CC50000C96DD /* Info.plist */,
 			);
 			path = Wireframe;
@@ -357,7 +371,8 @@
 			children = (
 				ECF7713E2543CD6B000C96DD /* QRCodeReader.h */,
 				ECF7713F2543CD6B000C96DD /* Info.plist */,
-				ECF771612543CDC6000C96DD /* QRCodeReader.swift */,
+				ECF771612543CDC6000C96DD /* QRCodeReaderView.swift */,
+				ECF771932543D3E3000C96DD /* Router.swift */,
 			);
 			path = QRCodeReader;
 			sourceTree = "<group>";
@@ -599,6 +614,7 @@
 					};
 					ECF771132543CC50000C96DD = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 					ECF7711B2543CC50000C96DD = {
 						CreatedOnToolsVersion = 12.0.1;
@@ -741,6 +757,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECF770EA25430581000C96DD /* WebView.swift in Sources */,
+				ECF7718A2543D1AE000C96DD /* Router.swift in Sources */,
 				ECF770F025430A7A000C96DD /* WebViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -757,6 +774,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECF7716C2543CEE6000C96DD /* GlobalSceneRouter.swift in Sources */,
+				ECF771802543CF51000C96DD /* QRCodeReaderWireframe.swift in Sources */,
+				ECF771762543CF44000C96DD /* WebWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -772,7 +792,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECF771622543CDC6000C96DD /* QRCodeReader.swift in Sources */,
+				ECF771942543D3E3000C96DD /* Router.swift in Sources */,
+				ECF771622543CDC6000C96DD /* QRCodeReaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1200,6 +1221,7 @@
 		ECF7712B2543CC50000C96DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1217,6 +1239,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.stnamco.playground.Wireframe;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1227,6 +1250,7 @@
 		ECF7712C2543CC50000C96DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
